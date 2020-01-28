@@ -1,7 +1,9 @@
 def prime?(num)
   result = true
-  if num < 3 
+  if num < 1 
     result = false
+  elsif num == 2
+    result = true
   else
     range = (2..(num / 2)).to_a
     range.each do |divisor|
