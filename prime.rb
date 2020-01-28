@@ -1,6 +1,6 @@
 def prime?(num)
   result = true
-  if num < 1 
+  if num < 3 
     result = false
   else
     range = (2..(num / 2)).to_a
