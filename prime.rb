@@ -1,9 +1,13 @@
 def prime?(num)
   result = true
-  range = (2..(num / 2)).to_a
-  range.each do |divisor|
-    if num % divisor == 0
-      result = false
+  if num < 1 
+    result = false
+  else
+    range = (2..(num / 2)).to_a
+    range.each do |divisor|
+      if num % divisor == 0
+        result = false
+      end
     end
   end
   
